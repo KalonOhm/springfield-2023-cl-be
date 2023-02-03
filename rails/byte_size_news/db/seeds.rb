@@ -12,5 +12,5 @@
 end
 
 (0..100).each do 
-  Group.create(group_name: Faker::Kpop.i_groups, active_members:(rand(1..21)) , sub_genre: Faker::Music.genre, boy_band:([true, false].sample))
+  Group.create(group_name: [Faker::Kpop.i_groups, Faker::Kpop.ii_groups, Faker::Kpop.iii_groups].sample, active_members:(rand(1..21)) , sub_genre: Faker::Music.genre, boy_band:([true, false].sample))
 end
