@@ -4,3 +4,11 @@
   <h2><%= issue.title %></h2>
   <p><%= issue.content %></p>
 <% end %>
+
+<% @groups.each do |group| %>
+  <h2>Group: <%= group.group_name %></h2>
+  <p>Members: <%= group.active_members %></p>
+  <p>Sub-genre: <%= group.sub_genre %></p>
+  <p>Gender: <%= group.boy_band ? "Boy-band" : "Girl-band"%></p>
+  
+<% end %>

@@ -10,3 +10,7 @@
 (0..100).each do 
   Issue.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph)
 end
+
+(0..100).each do 
+  Group.create(group_name: Faker::Kpop.i_groups, active_members:(rand(1..21)) , sub_genre: Faker::Music.genre, boy_band:([true, false].sample))
+end

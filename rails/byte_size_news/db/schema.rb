@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_02_234938) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_03_004217) do
+  create_table "groups", force: :cascade do |t|
+    t.string "group_name"
+    t.integer "active_members"
+    t.string "sub_genre"
+    t.boolean "boy_band"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "issues", force: :cascade do |t|
     t.string "title"
     t.text "content"

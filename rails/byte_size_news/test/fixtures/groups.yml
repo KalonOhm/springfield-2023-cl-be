@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group_name: MyString
+  active_members: 1
+  sub_genre: MyString
+  boy_band: false
+
+two:
+  group_name: MyString
+  active_members: 1
+  sub_genre: MyString
+  boy_band: false
